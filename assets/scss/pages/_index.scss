@@ -1,0 +1,165 @@
+#slider {
+  .homeId_slider {
+    .slider-wrapper {
+      position: relative;
+      min-height: 100vh;
+      padding: 50px 0;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      margin-top: 80px;
+      display: flex;
+      align-items: center;
+      .slider-content {
+        max-width: 470px;
+        margin-left: auto;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 11px 30px 0 rgb(51 51 51 / 15%);
+        padding: 30px 40px 20px;
+        h3 {
+          color: $clr-text-black;
+          font-size: 30px;
+          margin-bottom: 7px;
+          margin-top: 0 !important;
+          font-weight: 500;
+          line-height: 36px;
+          a {
+            color: inherit;
+            cursor: pointer;
+          }
+        }
+        .address-info {
+          margin-bottom: 12px;
+          font-weight: 500;
+          line-height: 26px;
+          a {
+            color: $clr-text-gray;
+            cursor: pointer;
+            transition: color 0.2s;
+            &:hover {
+              color: $clr-text-gray-hover;
+            }
+          }
+        }
+        .meta-info {
+          display: flex;
+          justify-content: space-between;
+          li {
+            display: flex;
+            align-items: center;
+            line-height: 26px;
+            i {
+              color: $clr-primary;
+              margin-right: 5px;
+              &.icon-king_bed {
+                font-size: 20px;
+              }
+              &.icon-shower {
+                font-size: 18px;
+              }
+            }
+            img {
+              width: 18px;
+              margin-right: 5px;
+            }
+            span {
+              color: $clr-text-gray;
+            }
+          }
+        }
+        .badges-price {
+          display: flex;
+          line-height: 26px;
+          margin-top: 8px;
+          padding-bottom: 5px;
+          padding-top: 24px;
+          border-top: 1px solid rgba(0, 0, 0, 0.12);
+          .badges-info {
+            .badge_info {
+              margin-right: 5px;
+              text-transform: uppercase;
+              color: white;
+              letter-spacing: 0.87px;
+              border-radius: 3px;
+              display: inline-block;
+              padding: 2px 10px;
+              font-size: 13px;
+              line-height: 20px;
+              text-align: center;
+              font-weight: 300;
+              &.rent {
+                background-color: $clr-tag-1;
+              }
+              &.featured {
+                background-color: $clr-tag-2;
+              }
+            }
+          }
+          .price-info {
+            line-height: 1.2;
+            margin-left: auto;
+            font-size: 24px;
+            color: $clr-text-black;
+
+            .price {
+              font-weight: 700;
+            }
+            .postfix {
+              color: $clr-text-gray;
+              font-weight: 500;
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+    .slick-arrow {
+      width: 52px;
+      height: 52px;
+      line-height: 52px;
+      text-align: center;
+      border-radius: 50%;
+      background-color: #fff;
+      margin: 0;
+      margin-top: 40px;
+      box-shadow: 0 0 7px 0 rgb(0 0 0 / 9%);
+      transition: all 0.3s;
+      z-index: 1;
+      position: absolute;
+      top: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      &::before {
+        display: none;
+      }
+      i {
+        font-size: 20px;
+        color: $clr-text-gray;
+        transition: all 0.3s;
+      }
+      &.slick-prev {
+        left: 20px;
+        transform: translate(0, -50%);
+      }
+      &.slick-next {
+        right: 20px;
+        transform: translate(0, -50%);
+      }
+
+      &:hover {
+        background-color: $clr-primary;
+        i {
+          color: #fff;
+        }
+      }
+    }
+    &:hover {
+      .slick-arrow {
+        opacity: 1;
+      }
+    }
+  }
+}
