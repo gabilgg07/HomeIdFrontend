@@ -13095,6 +13095,20 @@ main {
 #slider .homeId_slider:hover .slick-arrow {
   opacity: 1;
 }
+#slider .search-form {
+  position: absolute;
+  left: 50%;
+}
+#slider .search-form .search_form .form-inline {
+  background-color: rgba(34, 33, 33, 0.1333333333);
+  border-radius: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+}
 
 #wellcome {
   height: 1600px;

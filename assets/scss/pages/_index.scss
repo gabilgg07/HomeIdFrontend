@@ -167,6 +167,20 @@
       }
     }
   }
+  .search-form {
+    position: absolute;
+    left: 50%;
+    .search_form {
+      .form-inline {
+        background-color: #22212122;
+        border-radius: 5px;
+        padding-left: 15px;
+        padding-right: 15px;
+        display: flex;
+        color: white;
+      }
+    }
+  }
 }
 
 #wellcome {

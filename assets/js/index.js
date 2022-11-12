@@ -65,6 +65,16 @@ $(document).ready(function () {
     );
   }
 
+  // search-form
+  if ($(".search-form")) {
+    let widthHalf = parseFloat($(".search-form").css("width")) / 2;
+    let xCenter = parseFloat($(".search-form").css("left")) - widthHalf;
+    console.log(xCenter);
+    let yCenter = parseFloat($(".search-form").css("height")) / 2;
+    $(".search-form").css("left", xCenter);
+    $(".search-form").css("bottom", -yCenter);
+  }
+
   // wellcome section
   if ($("#wellcome")) {
     $("#wellcome").css("background-image", $("#wellcome").data("bg-img"));
