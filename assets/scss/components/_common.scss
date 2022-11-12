@@ -5,7 +5,16 @@ body {
 }
 
 .homeId_container {
-  max-width: 1550px !important;
+  max-width: 1550px;
+  @include mq-xl() {
+    max-width: 960px;
+  }
+  @include mq-lg() {
+    max-width: 720px;
+  }
+  @include mq-md() {
+    max-width: 540px;
+  }
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;

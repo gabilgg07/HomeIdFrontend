@@ -1,8 +1,10 @@
 #slider {
+  position: relative;
   .homeId_slider {
     .slider-wrapper {
       position: relative;
-      min-height: 100vh;
+      // min-height: 100vh;
+      min-height: calc(100vh - 80px);
       padding: 50px 0;
       background-repeat: no-repeat;
       background-position: center center;
@@ -94,6 +96,9 @@
               &.featured {
                 background-color: $clr-tag-2;
               }
+              &.sale {
+                background-color: $clr-tag-3;
+              }
             }
           }
           .price-info {
@@ -162,4 +167,9 @@
       }
     }
   }
+}
+
+#wellcome {
+  height: 1600px;
+  background-repeat: no-repeat;
 }

@@ -1,10 +1,11 @@
 header {
-  //   &.header_desktop {
-  //   }
   .header_desktop_wrapper {
     background-color: $clr-bg-black-1;
     height: 80px;
     display: flex;
+    @include mq-xl() {
+      display: none;
+    }
     align-items: center;
     transition: all 0.5s;
     position: absolute;
@@ -21,12 +22,34 @@ header {
       transform: translateY(-100%);
     }
   }
+  .header_mobile_wrapper {
+    background-color: $clr-bg-black-1;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    transition: all 0.5s;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    display: none;
+    @include mq-xl() {
+      display: flex;
+    }
+  }
+  .burger-menu {
+    margin-left: 20px;
+    i {
+      color: white;
+      font-size: 2rem;
+    }
+  }
   .logo {
     display: flex;
     align-items: center;
     a {
       .logo_img {
         max-height: 30px;
+        max-width: 100%;
       }
     }
   }
@@ -92,5 +115,90 @@ header {
         border-radius: 5px;
       }
     }
+  }
+}
+
+.menu-canvas {
+  position: absolute;
+  top: 0;
+  left: -350px;
+  width: 100%;
+  height: 1100px;
+  z-index: 2;
+  display: none;
+  transition: left 0.5s;
+  @include mq-xl() {
+    display: flex;
+  }
+  &.opened-canvas {
+    left: 0;
+  }
+  ul {
+    background-color: #222;
+    width: 300px;
+    position: absolute;
+    z-index: 3;
+    height: 100%;
+    li {
+      border-bottom: solid 1px #2f2f2f;
+      a {
+        font-size: 14px;
+        display: flex;
+        padding: 0.5rem 1.5rem;
+        text-transform: uppercase;
+        transition: color 0.5s;
+        color: #ccc;
+        display: inline-block;
+        line-height: 26px;
+        font-weight: 300;
+      }
+    }
+  }
+  .close {
+    position: absolute;
+    left: 300px;
+    border-radius: 0 5px 5px 0;
+    background-color: #222;
+    color: #ccc;
+    padding: 5px 10px;
+    line-height: 24px;
+    z-index: 2;
+  }
+  .canvas-layout {
+    height: 100%;
+    opacity: 0;
+    left: 300px;
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    pointer-events: auto;
+    cursor: auto;
+    transition: opacity 0.5s;
+    z-index: -1;
+    transition: opacity 0.5s;
+    &.opened-canvas {
+      opacity: 1;
+      z-index: 1;
+    }
+  }
+}
+
+.scroll-disabled {
+  @include mq-xl() {
+    overflow: hidden;
+  }
+}
+
+.header_mobile,
+main {
+  transition: margin-left 0.5s;
+}
+
+.canvas-opened {
+  @include mq-xl() {
+    margin-left: 300px;
+    width: 100%;
   }
 }
