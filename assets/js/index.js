@@ -73,6 +73,10 @@ $(document).ready(function () {
     let yCenter = parseFloat($(".search-form").css("height")) / 2;
     $(".search-form").css("left", xCenter);
     $(".search-form").css("bottom", -yCenter);
+
+    $.map($(".finded-homes .item-img a"), function (el) {
+      $(el).css("background-image", $(el).data("bg-img"));
+    });
   }
 
   // wellcome section
