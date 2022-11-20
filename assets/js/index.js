@@ -69,13 +69,199 @@ $(document).ready(function () {
   if ($(".search-form")) {
     let widthHalf = parseFloat($(".search-form").css("width")) / 2;
     let xCenter = parseFloat($(".search-form").css("left")) - widthHalf;
-    console.log(xCenter);
     let yCenter = parseFloat($(".search-form").css("height")) / 2;
     $(".search-form").css("left", xCenter);
     $(".search-form").css("bottom", -yCenter);
 
     $.map($(".finded-homes .item-img a"), function (el) {
       $(el).css("background-image", $(el).data("bg-img"));
+    });
+
+    $(".search_form").submit(function (e) {
+      e.preventDefault();
+    });
+
+    $(".advanced-btn a").click(function (e) {
+      e.preventDefault();
+    });
+
+    $(".option-list a").click(function (e) {
+      e.preventDefault();
+    });
+
+    let statusItems = [
+      {
+        text: "All Status",
+        isActive: true,
+      },
+      {
+        text: "For Rent",
+        isActive: false,
+      },
+      {
+        text: "For Sale",
+        isActive: false,
+      },
+    ];
+
+    let typeItems = [
+      {
+        text: "All Types",
+        isActive: true,
+      },
+      {
+        text: "Apartment",
+        isActive: false,
+      },
+      {
+        text: "Bar",
+        isActive: false,
+      },
+      {
+        text: "Cafe",
+        isActive: false,
+      },
+      {
+        text: "Farm",
+        isActive: false,
+      },
+      {
+        text: "House",
+        isActive: false,
+      },
+      {
+        text: "Luxury Homes",
+        isActive: false,
+      },
+      {
+        text: "Office",
+        isActive: false,
+      },
+      {
+        text: "Single Family",
+        isActive: false,
+      },
+      {
+        text: "Store",
+        isActive: false,
+      },
+      {
+        text: "Villa",
+        isActive: false,
+      },
+    ];
+    let prewElemId;
+    $(".select-input button").click(function (e) {
+      if (prewElemId == $(this).prev().attr("id")) {
+        $(this).next().toggleClass("d-none");
+      } else {
+        $(".select-input button").next().addClass("d-none");
+        $(this).next().removeClass("d-none");
+      }
+
+      let listItems = $(this)
+        .next()
+        .children(".option-list")
+        .children("ul")
+        .children();
+
+      function selectItem(e) {
+        let textItem = this.children[0].innerText;
+        this.parentElement.parentElement.parentElement.previousElementSibling.children[0].innerText =
+          textItem;
+        $.each(listItems, function (i, v) {
+          v.removeEventListener("click", selectItem, { once: true });
+        });
+      }
+
+      $.each(listItems, function (i, v) {
+        v.addEventListener("click", selectItem, { once: true });
+      });
+
+      prewElemId = $(this).prev().attr("id");
+
+      $(".status_select input").on("input", function (e) {
+        // console.log($(this).val());
+        // console.log($("#status_select_ul li a").text().contains($(this).val()));
+        // console.log(
+        //   $('#status_select_ul li a:contains("' + $(this).val() + '")').text()
+        // );
+        // console.log($.inArray($(this).val(), statusList));
+        let ulList = ``;
+        statusItems.forEach((v, i, a) => {
+          if (v.text.toUpperCase().includes($(this).val().toUpperCase())) {
+            ulList += `<li class="${v.isActive ? "selected active" : ""}">
+            <a href="#"> ${v.text} </a>
+          </li>`;
+          }
+        });
+        $("#status_select_ul").html(ulList);
+
+        $(".option-list a").click(function (e) {
+          e.preventDefault();
+        });
+        let listItems = $("#status_select_ul").children();
+
+        function selectItem(e) {
+          let textItem = this.children[0].innerText;
+          this.parentElement.parentElement.parentElement.previousElementSibling.children[0].innerText =
+            textItem;
+          $.each(listItems, function (i, v) {
+            v.removeEventListener("click", selectItem, { once: true });
+          });
+        }
+
+        $.each(listItems, function (i, v) {
+          v.addEventListener("click", selectItem, { once: true });
+        });
+      });
+
+      $(".type_select input").on("input", function (e) {
+        let ulList = ``;
+        typeItems.forEach((v) => {
+          if (v.text.toUpperCase().includes($(this).val().toUpperCase())) {
+            ulList += `<li class="${v.isActive ? "selected active" : ""}">
+            <a href="#"> ${v.text} </a>
+          </li>`;
+          }
+        });
+        $("#type_select_ul").html(ulList);
+        $(".option-list a").click(function (e) {
+          e.preventDefault();
+        });
+        let listItems = $("#type_select_ul").children();
+
+        function selectItem(e) {
+          let textItem = this.children[0].innerText;
+          this.parentElement.parentElement.parentElement.previousElementSibling.children[0].innerText =
+            textItem;
+          $.each(listItems, function (i, v) {
+            v.removeEventListener("click", selectItem, { once: true });
+          });
+        }
+
+        $.each(listItems, function (i, v) {
+          v.addEventListener("click", selectItem, { once: true });
+        });
+      });
+
+      // -------> bu usul da isleyir
+      // $(":input").on(".option-select_search input", function (e) {
+      //   console.log($(this).val());
+      // });
+      // ---------
+
+      // console.log("currentTarget: ");
+      // console.log(e.currentTarget.tagName);
+
+      // console.log("target: ");
+      // console.log(e.target.tagName);
+    });
+
+    $(document).click(function (e) {
+      if (!e.target.className.includes("option")) {
+        $(".select-input button").next().addClass("d-none");
+      }
     });
   }
 

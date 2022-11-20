@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HomeId</title>
-    <script src="https://kit.fontawesome.com/43720ad928.js"></script>
+    <!-- <script src="https://kit.fontawesome.com/43720ad928.js"></script> -->
     <link rel="stylesheet" href="./slick/slick.css" />
     <link rel="stylesheet" href="./slick/slick-theme.css" />
     <link rel="stylesheet" href="./assets/css/style.min.css" />
@@ -53,14 +53,14 @@
               >
                 <div class="sign-in">
                   <a href="#">
-                    <i class="fa-regular fa-circle-user"></i>
+                    <i class="icon-user-circle-o"></i>
                     <span>SIGN IN</span>
                   </a>
                 </div>
                 <div class="add-listing">
                   <a href="#">
                     <span class="me-1">Add listing</span>
-                    <i class="fa-solid fa-house"></i>
+                    <i class="icon-home-outline"></i>
                   </a>
                 </div>
               </div>
@@ -305,19 +305,22 @@
                       </div>
                     </div>
                   </div>
-                  <div class="search-form_select status_select">
-                    <label for="">status</label>
+                  <div class="search-form_select status_select option">
+                    <label for="searchStatusSelect">status</label>
                     <div class="select-input">
-                      <select name="" id=""></select>
-                      <button>
+                      <select
+                        name="searchStatusSelect"
+                        id="searchStatusSelect"
+                      ></select>
+                      <button class="option">
                         <div class="filter-option">All Status</div>
                       </button>
-                      <div class="option-select">
+                      <div class="option-select d-none">
                         <div class="option-select_search">
-                          <input type="text" />
+                          <input type="text" class="option" />
                         </div>
                         <div class="option-list">
-                          <ul>
+                          <ul id="status_select_ul">
                             <li class="selected active">
                               <a href="#"> All Status </a>
                             </li>
@@ -332,19 +335,22 @@
                       </div>
                     </div>
                   </div>
-                  <div class="search-form_select type_select">
-                    <label for="">type</label>
+                  <div class="search-form_select type_select option">
+                    <label for="searchTypeSelect">type</label>
                     <div class="select-input">
-                      <select name="" id=""></select>
-                      <button>
+                      <select
+                        name="searchTypeSelect"
+                        id="searchTypeSelect"
+                      ></select>
+                      <button class="option">
                         <div class="filter-option">All Types</div>
                       </button>
-                      <div class="option-select">
+                      <div class="option-select d-none">
                         <div class="option-select_search">
-                          <input type="text" />
+                          <input type="text" class="option" />
                         </div>
                         <div class="option-list">
-                          <ul>
+                          <ul id="type_select_ul">
                             <li class="selected active">
                               <a href="#"> All Types </a>
                             </li>

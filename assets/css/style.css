@@ -12800,6 +12800,9 @@ header .nav_list ul li:hover a::before {
 header .right-header a {
   color: #fff;
 }
+header .right-header a span {
+  margin-left: 5px;
+}
 header .right-header .add-listing {
   margin-left: 2.25rem;
 }
@@ -13169,7 +13172,7 @@ main {
   z-index: 4;
   background-color: transparent;
   border: 0;
-  font-size: 24px;
+  font-size: 28px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -13410,7 +13413,6 @@ main {
   right: auto;
   bottom: auto;
   z-index: 1000;
-  display: none;
   float: left;
   padding: 0.5rem 0;
   margin: 0.125rem 0 0;
@@ -13461,6 +13463,11 @@ main {
   background-color: #f8f9fa;
 }
 #slider .search-form .search_form .form-inline .search-form_select .select-input .option-select .option-list ul li a.active, #slider .search-form .search_form .form-inline .search-form_select .select-input .option-select .option-list ul li a:active {
+  color: #fff;
+  background-color: #007bff;
+}
+#slider .search-form .search_form .form-inline .search-form_select .select-input .option-select .option-list ul li.active a,
+#slider .search-form .search_form .form-inline .search-form_select .select-input .option-select .option-list ul li.active a:active {
   color: #fff;
   background-color: #007bff;
 }
