@@ -12649,6 +12649,16 @@ body {
   font-size: 14px;
 }
 
+::-moz-selection {
+  color: white;
+  background: #d1a570;
+}
+
+::selection {
+  color: white;
+  background: #d1a570;
+}
+
 .homeId_container {
   max-width: 1550px;
   width: 100%;
@@ -13562,4 +13572,69 @@ main {
 #wellcome {
   height: 1600px;
   background-repeat: no-repeat;
+  padding-top: 35px;
+}
+#wellcome .top-wellcome {
+  text-align: center;
+  width: 1200px;
+  margin: 0 auto;
+  margin-top: 65px;
+}
+#wellcome .top-wellcome .wellcome_top_title {
+  font-size: 32px;
+  line-height: 1.63;
+  color: #333;
+  font-weight: 500;
+}
+#wellcome .top-wellcome .wellcome_top_desc {
+  font-size: 14px;
+  margin-top: 15px;
+  color: rgb(126, 126, 126);
+}
+#wellcome .top-wellcome .wellcome-wrapper {
+  margin-top: 40px;
+}
+#wellcome .top-wellcome .wellcome-wrapper .wellcome-items {
+  -webkit-box-shadow: 0 5px 15px 0 rgba(51, 51, 51, 0.08);
+          box-shadow: 0 5px 15px 0 rgba(51, 51, 51, 0.08);
+  border-radius: 5px;
+  background-color: #fff;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  padding: 17px 45px 32px;
+  padding-top: 54px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+#wellcome .top-wellcome .wellcome-wrapper .wellcome-items .image-box {
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 93px;
+          flex: 0 0 93px;
+  max-width: 93px;
+}
+#wellcome .top-wellcome .wellcome-wrapper .wellcome-items .image-box img {
+  max-width: 100%;
+  height: auto;
+}
+#wellcome .top-wellcome .wellcome-wrapper .wellcome-items .content-box .title {
+  line-height: 1.6;
+  font-size: 20px;
+  color: #333;
+  font-weight: 500;
+}
+#wellcome .top-wellcome .wellcome-wrapper .wellcome-items .content-box .desc {
+  margin-top: 10px;
+  color: rgb(126, 126, 126);
+  line-height: 26px;
+}
+#wellcome .top-wellcome .wellcome-wrapper .wellcome-items:hover {
+  -webkit-box-shadow: 0 30px 50px 0 rgba(51, 51, 51, 0.1);
+          box-shadow: 0 30px 50px 0 rgba(51, 51, 51, 0.1);
 }

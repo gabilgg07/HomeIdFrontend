@@ -58,10 +58,10 @@ $(document).ready(function () {
     $(".homeId_slider").slick();
 
     $(".homeId_slider .slick-arrow.slick-prev").html(
-      `<i class="fa-solid fa-chevron-left"></i>`
+      `<i class="icon-chevron-thin-left"></i>`
     );
     $(".homeId_slider .slick-arrow.slick-next").html(
-      `<i class="fa-solid fa-chevron-right"></i>`
+      `<i class="icon-chevron-thin-right"></i>`
     );
   }
 

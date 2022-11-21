@@ -574,4 +574,64 @@
 #wellcome {
   height: 1600px;
   background-repeat: no-repeat;
+  // padding-left: 65px;
+  // padding-right: 65px;
+  padding-top: 35px;
+  .top-wellcome {
+    text-align: center;
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 65px;
+    .wellcome_top_title {
+      font-size: 32px;
+      line-height: 1.63;
+      color: $clr-text-black;
+      font-weight: 500;
+    }
+    .wellcome_top_desc {
+      font-size: 14px;
+      margin-top: 15px;
+      color: $clr-text-gray;
+    }
+
+    .wellcome-wrapper {
+      margin-top: 40px;
+      .wellcome-items {
+        box-shadow: 0 5px 15px 0 rgb(51 51 51 / 8%);
+        border-radius: 5px;
+        background-color: #fff;
+        transition: all 0.3s;
+        padding: 17px 45px 32px;
+        padding-top: 54px;
+        display: flex;
+        flex-direction: column;
+        .image-box {
+          margin-left: auto;
+          margin-right: auto;
+          flex: 0 0 93px;
+          max-width: 93px;
+          img {
+            max-width: 100%;
+            height: auto;
+          }
+        }
+        .content-box {
+          .title {
+            line-height: 1.6;
+            font-size: 20px;
+            color: $clr-text-black;
+            font-weight: 500;
+          }
+          .desc {
+            margin-top: 10px;
+            color: $clr-text-gray;
+            line-height: 26px;
+          }
+        }
+        &:hover {
+          box-shadow: 0 30px 50px 0 rgb(51 51 51 / 10%);
+        }
+      }
+    }
+  }
 }

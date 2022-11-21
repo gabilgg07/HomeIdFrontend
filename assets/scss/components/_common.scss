@@ -3,6 +3,11 @@ body {
   font-size: 14px;
 }
 
+::selection {
+  color: white;
+  background: $clr-primary;
+}
+
 .homeId_container {
   max-width: 1550px;
   @include mq-xl() {
