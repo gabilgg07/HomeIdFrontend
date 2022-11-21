@@ -266,7 +266,10 @@ $(document).ready(function () {
   }
 
   // wellcome section
-  if ($("#wellcome")) {
-    $("#wellcome").css("background-image", $("#wellcome").data("bg-img"));
+  if ($("#wellcome_featured")) {
+    $("#wellcome_featured").css(
+      "background-image",
+      $("#wellcome_featured").data("bg-img")
+    );
   }
 });

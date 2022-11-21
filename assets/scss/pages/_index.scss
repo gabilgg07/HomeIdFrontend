@@ -568,27 +568,41 @@
         }
       }
     }
+
+    @include mq-xl() {
+      display: none;
+    }
   }
 }
 
-#wellcome {
-  height: 1600px;
+#wellcome_featured {
   background-repeat: no-repeat;
-  // padding-left: 65px;
-  // padding-right: 65px;
   padding-top: 35px;
-  .top-wellcome {
+  height: 1660px;
+  .wellcome {
     text-align: center;
     width: 1200px;
+
+    @include mq-xl() {
+      width: 998px;
+    }
+    @include mq-lg() {
+      width: 767px;
+    }
+
+    @include mq-md() {
+      width: 100%;
+    }
+
     margin: 0 auto;
     margin-top: 65px;
-    .wellcome_top_title {
+    .wellcome_title {
       font-size: 32px;
       line-height: 1.63;
       color: $clr-text-black;
       font-weight: 500;
     }
-    .wellcome_top_desc {
+    .wellcome_desc {
       font-size: 14px;
       margin-top: 15px;
       color: $clr-text-gray;
@@ -633,5 +647,9 @@
         }
       }
     }
+  }
+
+  .featured {
+    width: 1680px;
   }
 }
