@@ -511,7 +511,6 @@
 }
 .badges-info {
   .badge_info {
-    margin-right: 5px;
     text-transform: uppercase;
     color: white;
     letter-spacing: 0.87px;
@@ -530,6 +529,9 @@
     }
     &.sale_bg {
       background-color: $clr-tag-3;
+    }
+    &.offer_bg {
+      background-color: $clr-tag-4;
     }
   }
 }
@@ -579,7 +581,7 @@
 #wellcome_featured {
   background-repeat: no-repeat;
   padding-top: 35px;
-  height: 1660px;
+  padding-bottom: 70px;
   .wellcome {
     text-align: center;
     width: 1200px;
@@ -595,8 +597,7 @@
       width: 100%;
     }
 
-    margin: 0 auto;
-    margin-top: 65px;
+    margin: 65px auto;
     .wellcome_title {
       font-size: 32px;
       line-height: 1.63;
@@ -652,8 +653,7 @@
 
   .featured {
     width: 1310px;
-    margin: 0 auto;
-    margin-top: 80px;
+    margin: auto;
 
     @include mq-xl() {
       width: 998px;

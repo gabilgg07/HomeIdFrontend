@@ -13524,7 +13524,6 @@ main {
 }
 
 .badges-info .badge_info {
-  margin-right: 5px;
   text-transform: uppercase;
   color: white;
   letter-spacing: 0.87px;
@@ -13544,6 +13543,9 @@ main {
 }
 .badges-info .badge_info.sale_bg {
   background-color: #6178b6;
+}
+.badges-info .badge_info.offer_bg {
+  background-color: #888;
 }
 
 .meta-info {
@@ -13599,13 +13601,12 @@ main {
 #wellcome_featured {
   background-repeat: no-repeat;
   padding-top: 35px;
-  height: 1660px;
+  padding-bottom: 70px;
 }
 #wellcome_featured .wellcome {
   text-align: center;
   width: 1200px;
-  margin: 0 auto;
-  margin-top: 65px;
+  margin: 65px auto;
 }
 @media (max-width: 1200px) {
   #wellcome_featured .wellcome {
@@ -13682,8 +13683,7 @@ main {
 }
 #wellcome_featured .featured {
   width: 1310px;
-  margin: 0 auto;
-  margin-top: 80px;
+  margin: auto;
 }
 @media (max-width: 1200px) {
   #wellcome_featured .featured {
