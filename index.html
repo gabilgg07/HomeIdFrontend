@@ -12,7 +12,7 @@
   </head>
   <body>
     <header id="site_header" class="header_desktop">
-      <div class="header_desktop_wrapper">
+      <div class="header_desktop_wrapper header_wrapper">
         <div class="homeId_container">
           <div class="row justify-content-between align-items-center">
             <div class="col-md-2">
@@ -70,7 +70,7 @@
       </div>
     </header>
     <header id="mobile_header" class="header_mobile">
-      <div class="header_mobile_wrapper">
+      <div class="header_mobile_wrapper header_wrapper">
         <div class="homeId_container">
           <div class="row justify-content-between align-items-center">
             <div class="col-6">
@@ -277,6 +277,7 @@
                         type="text"
                         name="keyword"
                         placeholder="Enter Keyword..."
+                        autocomplete="off"
                       />
                       <div class="finded-homes">
                         <ul>
@@ -410,8 +411,8 @@
       >
         <div class="wellcome">
           <div class="homeId_container">
-            <h2 class="wellcome_title">Welcome to HomeID</h2>
-            <p class="wellcome_desc">
+            <h2 class="wellcome_title title_primary">Welcome to HomeID</h2>
+            <p class="wellcome_desc desc_primary">
               Whether you’re buying, selling or renting, we can help you move
               forward.
             </p>
@@ -476,14 +477,16 @@
           <div class="featured_top">
             <div class="row">
               <div class="col-sm-7 mb-4 mb-md-0">
-                <div class="featured_header">
-                  <h2 class="title">HomeID Featured Properties</h2>
-                  <p class="desc">Find a perfect place for you.</p>
+                <div class="featured_header header_secondary">
+                  <h2 class="title_secondary">HomeID Featured Properties</h2>
+                  <p class="desc_secondary">Find a perfect place for you.</p>
                 </div>
               </div>
               <div class="col-sm-5">
-                <div class="featured_button justify-content-sm-end">
-                  <a href="#" class="featured_btn">
+                <div
+                  class="featured_button btn_box_secondary justify-content-sm-end"
+                >
+                  <a href="#" class="featured_btn btn_secondary">
                     View all properties
                     <i class="icon-long-arrow-right"></i>
                   </a>
@@ -491,575 +494,1252 @@
               </div>
             </div>
           </div>
+          <div class="featured_items slide_items">
+            <div>
+              <div class="slide_card">
+                <div class="card_img">
+                  <a href="#" data-bg-img="url(./assets/images/home-01.jpeg)">
+                  </a>
+                  <div class="badges-info">
+                    <span class="badge_info featured_bg">featured</span>
+                    <span class="badge_info rent_bg">for rent</span>
+                  </div>
+                  <div class="img_hover_icon">
+                    <i class="icon-pictures"></i>
+                  </div>
+                </div>
+                <div class="card_body">
+                  <div class="content_top">
+                    <h3>
+                      <a href="#"> House In Foxhall Ave, Kingston </a>
+                    </h3>
+                    <div class="address-info">
+                      <a href="#">289 Foxhall Ave, Kingston</a>
+                    </div>
+                    <ul class="meta-info">
+                      <li>
+                        <i class="icon-king_bed"></i>
+                        <span>3 Br</span>
+                      </li>
+                      <li>
+                        <i class="icon-shower"></i>
+                        <span>2 Ba</span>
+                      </li>
+                      <li>
+                        <img
+                          src="./assets/images/icon_home_project.svg"
+                          alt="icon home project"
+                        />
+                        <span>900 SqFt</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="content_bottom">
+                    <div class="price-info">
+                      <span class="price">$550</span>
+                      <span class="postfix">/ month</span>
+                    </div>
+                    <div class="actions">
+                      <a href="#">
+                        <i class="icon-star1"></i>
+                      </a>
+                      <a href="#">
+                        <i class="icon-plus"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="slide_card">
+                <div class="card_img">
+                  <a href="#" data-bg-img="url(./assets/images/home-02.jpeg)">
+                  </a>
+                  <div class="badges-info">
+                    <span class="badge_info featured_bg">featured</span>
+                    <span class="badge_info rent_bg">for rent</span>
+                  </div>
+                  <div class="img_hover_icon">
+                    <i class="icon-pictures"></i>
+                  </div>
+                </div>
+                <div class="card_body">
+                  <div class="content_top">
+                    <h3>
+                      <a href="#"> Luxury Villa In Alice </a>
+                    </h3>
+                    <div class="address-info">
+                      <a href="#">909 S Cameron St, Alice</a>
+                    </div>
+                    <ul class="meta-info">
+                      <li>
+                        <i class="icon-king_bed"></i>
+                        <span>3 Br</span>
+                      </li>
+                      <li>
+                        <i class="icon-shower"></i>
+                        <span>2 Ba</span>
+                      </li>
+                      <li>
+                        <img
+                          src="./assets/images/icon_home_project.svg"
+                          alt="icon home project"
+                        />
+                        <span>900 SqFt</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="content_bottom">
+                    <div class="price-info">
+                      <span class="price">$550</span>
+                      <span class="postfix">/ month</span>
+                    </div>
+                    <div class="actions">
+                      <a href="#">
+                        <i class="icon-star1"></i>
+                      </a>
+                      <a href="#">
+                        <i class="icon-plus"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="slide_card">
+                <div class="card_img">
+                  <a href="#" data-bg-img="url(./assets/images/home-03.jpeg)">
+                  </a>
+                  <div class="badges-info">
+                    <span class="badge_info featured_bg">featured</span>
+                    <span class="badge_info sale_bg">for sale</span>
+                  </div>
+                  <div class="img_hover_icon">
+                    <i class="icon-pictures"></i>
+                  </div>
+                </div>
+                <div class="card_body">
+                  <div class="content_top">
+                    <h3>
+                      <a href="#"> Store in Woodside, New York </a>
+                    </h3>
+                    <div class="address-info">
+                      <a href="#">39-11 61st St, Woodside, New York</a>
+                    </div>
+                    <ul class="meta-info">
+                      <li>
+                        <i class="icon-king_bed"></i>
+                        <span>3 Br</span>
+                      </li>
+                      <li>
+                        <i class="icon-shower"></i>
+                        <span>2 Ba</span>
+                      </li>
+                      <li>
+                        <img
+                          src="./assets/images/icon_home_project.svg"
+                          alt="icon home project"
+                        />
+                        <span>900 SqFt</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="content_bottom">
+                    <div class="price-info">
+                      <span class="price">$1,250,000</span>
+                    </div>
+                    <div class="actions">
+                      <a href="#">
+                        <i class="icon-star1"></i>
+                      </a>
+                      <a href="#">
+                        <i class="icon-plus"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="slide_card">
+                <div class="card_img">
+                  <a href="#" data-bg-img="url(./assets/images/home-04.jpeg)">
+                  </a>
+                  <div class="badges-info">
+                    <span class="badge_info featured_bg">featured</span>
+                    <span class="badge_info sale_bg">for sale</span>
+                  </div>
+                  <div class="img_hover_icon">
+                    <i class="icon-pictures"></i>
+                  </div>
+                </div>
+                <div class="card_body">
+                  <div class="content_top">
+                    <h3>
+                      <a href="#"> Hermosa casa al norte </a>
+                    </h3>
+                    <div class="address-info">
+                      <a href="#">393 Lewis Ave, Brooklyn, New York</a>
+                    </div>
+                    <ul class="meta-info">
+                      <li>
+                        <i class="icon-king_bed"></i>
+                        <span>3 Br</span>
+                      </li>
+                      <li>
+                        <i class="icon-shower"></i>
+                        <span>2 Ba</span>
+                      </li>
+                      <li>
+                        <img
+                          src="./assets/images/icon_home_project.svg"
+                          alt="icon home project"
+                        />
+                        <span>900 SqFt</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="content_bottom">
+                    <div class="price-info">
+                      <span class="price">$1,250,000</span>
+                    </div>
+                    <div class="actions">
+                      <a href="#">
+                        <i class="icon-star1"></i>
+                      </a>
+                      <a href="#">
+                        <i class="icon-plus"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="slide_card">
+                <div class="card_img">
+                  <a href="#" data-bg-img="url(./assets/images/home-05.jpeg)">
+                  </a>
+                  <div class="badges-info">
+                    <span class="badge_info featured_bg">featured</span>
+                    <span class="badge_info sale_bg">for sale</span>
+                  </div>
+                  <div class="img_hover_icon">
+                    <i class="icon-pictures"></i>
+                  </div>
+                </div>
+                <div class="card_body">
+                  <div class="content_top">
+                    <h3>
+                      <a href="#"> Casa Lomas de Machalí </a>
+                    </h3>
+                    <div class="address-info">
+                      <a href="#">145 Brooklyn Ave, Brooklyn, New York</a>
+                    </div>
+                    <ul class="meta-info">
+                      <li>
+                        <i class="icon-king_bed"></i>
+                        <span>3 Br</span>
+                      </li>
+                      <li>
+                        <i class="icon-shower"></i>
+                        <span>2 Ba</span>
+                      </li>
+                      <li>
+                        <img
+                          src="./assets/images/icon_home_project.svg"
+                          alt="icon home project"
+                        />
+                        <span>900 SqFt</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="content_bottom">
+                    <div class="price-info">
+                      <span class="price">$1,250,000</span>
+                    </div>
+                    <div class="actions">
+                      <a href="#">
+                        <i class="icon-star1"></i>
+                      </a>
+                      <a href="#">
+                        <i class="icon-plus"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="slide_card">
+                <div class="card_img">
+                  <a href="#" data-bg-img="url(./assets/images/home-06.jpeg)">
+                  </a>
+                  <div class="badges-info">
+                    <span class="badge_info featured_bg">featured</span>
+                    <span class="badge_info sale_bg">for sale</span>
+                    <span class="badge_info offer_bg">hot offer</span>
+                  </div>
+                  <div class="img_hover_icon">
+                    <i class="icon-pictures"></i>
+                  </div>
+                </div>
+                <div class="card_body">
+                  <div class="content_top">
+                    <h3>
+                      <a href="#">Luxury Villa In Los Angeles </a>
+                    </h3>
+                    <div class="address-info">
+                      <a href="#">8433 Sunset Blvd, Los Angeles</a>
+                    </div>
+                    <ul class="meta-info">
+                      <li>
+                        <i class="icon-king_bed"></i>
+                        <span>3 Br</span>
+                      </li>
+                      <li>
+                        <i class="icon-shower"></i>
+                        <span>2 Ba</span>
+                      </li>
+                      <li>
+                        <img
+                          src="./assets/images/icon_home_project.svg"
+                          alt="icon home project"
+                        />
+                        <span>900 SqFt</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="content_bottom">
+                    <div class="price-info">
+                      <span class="price">$1,250,000</span>
+                    </div>
+                    <div class="actions">
+                      <a href="#">
+                        <i class="icon-star1"></i>
+                      </a>
+                      <a href="#">
+                        <i class="icon-plus"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="slide_card">
+                <div class="card_img">
+                  <a href="#" data-bg-img="url(./assets/images/home-07.jpeg)">
+                  </a>
+                  <div class="badges-info">
+                    <span class="badge_info featured_bg">featured</span>
+                    <span class="badge_info sale_bg">for sale</span>
+                    <span class="badge_info offer_bg">hot offer</span>
+                  </div>
+                  <div class="img_hover_icon">
+                    <i class="icon-pictures"></i>
+                  </div>
+                </div>
+                <div class="card_body">
+                  <div class="content_top">
+                    <h3>
+                      <a href="#"> Farm in 5137 Compton Ave, Los Angeles </a>
+                    </h3>
+                    <div class="address-info">
+                      <a href="#">5137 Compton Ave, Los Angeles</a>
+                    </div>
+                    <ul class="meta-info">
+                      <li>
+                        <i class="icon-king_bed"></i>
+                        <span>3 Br</span>
+                      </li>
+                      <li>
+                        <i class="icon-shower"></i>
+                        <span>2 Ba</span>
+                      </li>
+                      <li>
+                        <img
+                          src="./assets/images/icon_home_project.svg"
+                          alt="icon home project"
+                        />
+                        <span>900 SqFt</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="content_bottom">
+                    <div class="price-info">
+                      <span class="price">$1,250,000</span>
+                    </div>
+                    <div class="actions">
+                      <a href="#">
+                        <i class="icon-star1"></i>
+                      </a>
+                      <a href="#">
+                        <i class="icon-plus"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="slide_card">
+                <div class="card_img">
+                  <a href="#" data-bg-img="url(./assets/images/home-08.jpeg)">
+                  </a>
+                  <div class="badges-info">
+                    <span class="badge_info featured_bg">featured</span>
+                    <span class="badge_info rent_bg">for rent</span>
+                  </div>
+                  <div class="img_hover_icon">
+                    <i class="icon-pictures"></i>
+                  </div>
+                </div>
+                <div class="card_body">
+                  <div class="content_top">
+                    <h3>
+                      <a href="#"> Single House Near Los Angeles </a>
+                    </h3>
+                    <div class="address-info">
+                      <a href="#">10768 Bellagio Rd, Los Angeles</a>
+                    </div>
+                    <ul class="meta-info">
+                      <li>
+                        <i class="icon-king_bed"></i>
+                        <span>3 Br</span>
+                      </li>
+                      <li>
+                        <i class="icon-shower"></i>
+                        <span>2 Ba</span>
+                      </li>
+                      <li>
+                        <img
+                          src="./assets/images/icon_home_project.svg"
+                          alt="icon home project"
+                        />
+                        <span>900 SqFt</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="content_bottom">
+                    <div class="price-info">
+                      <span class="price">$550</span>
+                      <span class="postfix">/ month</span>
+                    </div>
+                    <div class="actions">
+                      <a href="#">
+                        <i class="icon-star1"></i>
+                      </a>
+                      <a href="#">
+                        <i class="icon-plus"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="slide_card">
+                <div class="card_img">
+                  <a href="#" data-bg-img="url(./assets/images/home-09.jpeg)">
+                  </a>
+                  <div class="badges-info">
+                    <span class="badge_info featured_bg">featured</span>
+                    <span class="badge_info rent_bg">for rent</span>
+                  </div>
+                  <div class="img_hover_icon">
+                    <i class="icon-pictures"></i>
+                  </div>
+                </div>
+                <div class="card_body">
+                  <div class="content_top">
+                    <h3>
+                      <a href="#"> House Highland Ave Los Angeles </a>
+                    </h3>
+                    <div class="address-info">
+                      <a href="#">3854 Cazador St, Los Angeles</a>
+                    </div>
+                    <ul class="meta-info">
+                      <li>
+                        <i class="icon-king_bed"></i>
+                        <span>3 Br</span>
+                      </li>
+                      <li>
+                        <i class="icon-shower"></i>
+                        <span>2 Ba</span>
+                      </li>
+                      <li>
+                        <img
+                          src="./assets/images/icon_home_project.svg"
+                          alt="icon home project"
+                        />
+                        <span>900 SqFt</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="content_bottom">
+                    <div class="price-info">
+                      <span class="price">$550</span>
+                      <span class="postfix">/ month</span>
+                    </div>
+                    <div class="actions">
+                      <a href="#">
+                        <i class="icon-star1"></i>
+                      </a>
+                      <a href="#">
+                        <i class="icon-plus"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="slide_card">
+                <div class="card_img">
+                  <a href="#" data-bg-img="url(./assets/images/home-10.jpeg)">
+                  </a>
+                  <div class="badges-info">
+                    <span class="badge_info featured_bg">featured</span>
+                    <span class="badge_info sale_bg">for sale</span>
+                    <span class="badge_info offer_bg">hot offer</span>
+                  </div>
+                  <div class="img_hover_icon">
+                    <i class="icon-pictures"></i>
+                  </div>
+                </div>
+                <div class="card_body">
+                  <div class="content_top">
+                    <h3>
+                      <a href="#"> Farm in Castro St Los Angeles </a>
+                    </h3>
+                    <div class="address-info">
+                      <a href="#">5905 Wilshire Blvd, Los Angeles</a>
+                    </div>
+                    <ul class="meta-info">
+                      <li>
+                        <i class="icon-king_bed"></i>
+                        <span>3 Br</span>
+                      </li>
+                      <li>
+                        <i class="icon-shower"></i>
+                        <span>2 Ba</span>
+                      </li>
+                      <li>
+                        <img
+                          src="./assets/images/icon_home_project.svg"
+                          alt="icon home project"
+                        />
+                        <span>900 SqFt</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="content_bottom">
+                    <div class="price-info">
+                      <span class="price">$1,250,000</span>
+                    </div>
+                    <div class="actions">
+                      <a href="#">
+                        <i class="icon-star1"></i>
+                      </a>
+                      <a href="#">
+                        <i class="icon-plus"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="lifestyles">
+        <div class="homeId_container">
+          <h2 class="lifestyles_title title_primary">Explore New Lifestyles</h2>
+          <p class="lifestyles_desc desc_primary">
+            Find your next home, in any style you prefer.
+          </p>
+          <div class="lifestyles_wrapper">
+            <div class="row">
+              <div class="col-md-3 col-6 p-0">
+                <div class="lifestyles_items">
+                  <div class="img-box">
+                    <a href="#">
+                      <img
+                        class="style_img"
+                        src="./assets/images/style-apartment.png"
+                        alt="apartment"
+                      />
+                      <img
+                        class="style_img_hover"
+                        src="./assets/images/style-apartment-hover.png"
+                        alt="apartment-hover"
+                      />
+                    </a>
+                  </div>
+                  <div class="content-box">
+                    <h4>
+                      <a href="#">Apartment</a>
+                    </h4>
+                    <div class="description">
+                      <p>4 Properties</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 col-6 p-0">
+                <div class="lifestyles_items">
+                  <div class="img-box">
+                    <a href="#">
+                      <img
+                        class="style_img"
+                        src="./assets/images/style-house.png"
+                        alt="apartment"
+                      />
+                      <img
+                        class="style_img_hover"
+                        src="./assets/images/style-house-hover.png"
+                        alt="apartment-hover"
+                      />
+                    </a>
+                  </div>
+                  <div class="content-box">
+                    <h4>
+                      <a href="#"> House </a>
+                    </h4>
+                    <div class="description">
+                      <p>9 Properties</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 col-6 p-0">
+                <div class="lifestyles_items">
+                  <div class="img-box">
+                    <a href="#">
+                      <img
+                        class="style_img"
+                        src="./assets/images/style-luxury.png"
+                        alt="apartment"
+                      />
+                      <img
+                        class="style_img_hover"
+                        src="./assets/images/style-luxury-hover.png"
+                        alt="apartment-hover"
+                      />
+                    </a>
+                  </div>
+                  <div class="content-box">
+                    <h4>
+                      <a href="#"> Luxury Homes </a>
+                    </h4>
+                    <div class="description">
+                      <p>3 Properties</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 col-6 p-0">
+                <div class="lifestyles_items style_last_item">
+                  <div class="img-box">
+                    <a href="#">
+                      <img
+                        class="style_img"
+                        src="./assets/images/style-villa.png"
+                        alt="apartment"
+                      />
+                      <img
+                        class="style_img_hover"
+                        src="./assets/images/style-villa-hover.png"
+                        alt="apartment-hover"
+                      />
+                    </a>
+                  </div>
+                  <div class="content-box">
+                    <h4>
+                      <a href="#"> Villa </a>
+                    </h4>
+                    <div class="description">
+                      <p>6 Properties</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="lastes_for_sale">
+        <div class="homeId_container">
           <div class="row">
-            <div class="col-12">
-              <div class="featured_items">
-                <div>
-                  <div class="featured_card">
-                    <div class="card_img">
-                      <a href="#">
-                        <img src="./assets/images/home-01.jpeg" alt="home-01" />
-                      </a>
-                      <div class="badges-info">
-                        <span class="badge_info featured_bg">featured</span>
-                        <span class="badge_info rent_bg">for rent</span>
-                      </div>
-                      <div class="img_hover_icon">
-                        <i class="icon-pictures"></i>
-                      </div>
+            <div class="col-sm-7 mb-4 mb-md-0">
+              <div class="featured_header header_secondary">
+                <h2 class="title_secondary">Lastest Properties For Sale</h2>
+                <p class="desc_secondary">Find a perfect place for you.</p>
+              </div>
+            </div>
+            <div class="col-sm-5">
+              <div
+                class="featured_button btn_box_secondary justify-content-sm-end"
+              >
+                <a href="#" class="featured_btn btn_secondary">
+                  View all properties
+                  <i class="icon-long-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="lastes_for_sale_items slide_items">
+            <div>
+              <div class="slide_card">
+                <div class="card_img">
+                  <a href="#" data-bg-img="url(./assets/images/home-02.jpeg)">
+                  </a>
+                  <div class="badges-info">
+                    <span class="badge_info featured_bg">featured</span>
+                    <span class="badge_info sale_bg">for sale</span>
+                  </div>
+                  <div class="img_hover_icon">
+                    <i class="icon-pictures"></i>
+                  </div>
+                </div>
+                <div class="card_body">
+                  <div class="content_top">
+                    <h3>
+                      <a href="#"> Store in Woodside, New York </a>
+                    </h3>
+                    <div class="address-info">
+                      <a href="#">39-11 61st St, Woodside, New York</a>
                     </div>
-                    <div class="card_body">
-                      <div class="content_top">
-                        <h3>
-                          <a href="#"> House In Foxhall Ave, Kingston </a>
-                        </h3>
-                        <div class="address-info">
-                          <a href="#">289 Foxhall Ave, Kingston</a>
-                        </div>
-                        <ul class="meta-info">
-                          <li>
-                            <i class="icon-king_bed"></i>
-                            <span>3 Br</span>
-                          </li>
-                          <li>
-                            <i class="icon-shower"></i>
-                            <span>2 Ba</span>
-                          </li>
-                          <li>
-                            <img
-                              src="./assets/images/icon_home_project.svg"
-                              alt="icon home project"
-                            />
-                            <span>900 SqFt</span>
-                          </li>
-                        </ul>
-                      </div>
-                      <div class="content_bottom">
-                        <div class="price-info">
-                          <span class="price">$550</span>
-                          <span class="postfix">/ month</span>
-                        </div>
-                        <div class="actions">
-                          <a href="#">
-                            <i class="icon-star1"></i>
-                          </a>
-                          <a href="#">
-                            <i class="icon-plus"></i>
-                          </a>
-                        </div>
-                      </div>
+                    <ul class="meta-info">
+                      <li>
+                        <i class="icon-king_bed"></i>
+                        <span>3 Br</span>
+                      </li>
+                      <li>
+                        <i class="icon-shower"></i>
+                        <span>2 Ba</span>
+                      </li>
+                      <li>
+                        <img
+                          src="./assets/images/icon_home_project.svg"
+                          alt="icon home project"
+                        />
+                        <span>900 SqFt</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="content_bottom">
+                    <div class="price-info">
+                      <span class="price">$1,250,000</span>
+                    </div>
+                    <div class="actions">
+                      <a href="#">
+                        <i class="icon-star1"></i>
+                      </a>
+                      <a href="#">
+                        <i class="icon-plus"></i>
+                      </a>
                     </div>
                   </div>
                 </div>
-                <div>
-                  <div class="featured_card">
-                    <div class="card_img">
-                      <a href="#">
-                        <img src="./assets/images/home-02.jpeg" alt="home-02" />
-                      </a>
-                      <div class="badges-info">
-                        <span class="badge_info featured_bg">featured</span>
-                        <span class="badge_info rent_bg">for rent</span>
-                      </div>
-                      <div class="img_hover_icon">
-                        <i class="icon-pictures"></i>
-                      </div>
+              </div>
+            </div>
+            <div>
+              <div class="slide_card">
+                <div class="card_img">
+                  <a href="#" data-bg-img="url(./assets/images/home-04.jpeg)">
+                  </a>
+                  <div class="badges-info">
+                    <span class="badge_info featured_bg">featured</span>
+                    <span class="badge_info sale_bg">for sale</span>
+                  </div>
+                  <div class="img_hover_icon">
+                    <i class="icon-pictures"></i>
+                  </div>
+                </div>
+                <div class="card_body">
+                  <div class="content_top">
+                    <h3>
+                      <a href="#"> Hermosa casa al norte </a>
+                    </h3>
+                    <div class="address-info">
+                      <a href="#">393 Lewis Ave, Brooklyn, New York</a>
                     </div>
-                    <div class="card_body">
-                      <div class="content_top">
-                        <h3>
-                          <a href="#"> Luxury Villa In Alice </a>
-                        </h3>
-                        <div class="address-info">
-                          <a href="#">909 S Cameron St, Alice</a>
-                        </div>
-                        <ul class="meta-info">
-                          <li>
-                            <i class="icon-king_bed"></i>
-                            <span>3 Br</span>
-                          </li>
-                          <li>
-                            <i class="icon-shower"></i>
-                            <span>2 Ba</span>
-                          </li>
-                          <li>
-                            <img
-                              src="./assets/images/icon_home_project.svg"
-                              alt="icon home project"
-                            />
-                            <span>900 SqFt</span>
-                          </li>
-                        </ul>
-                      </div>
-                      <div class="content_bottom">
-                        <div class="price-info">
-                          <span class="price">$550</span>
-                          <span class="postfix">/ month</span>
-                        </div>
-                        <div class="actions">
-                          <a href="#">
-                            <i class="icon-star1"></i>
-                          </a>
-                          <a href="#">
-                            <i class="icon-plus"></i>
-                          </a>
-                        </div>
-                      </div>
+                    <ul class="meta-info">
+                      <li>
+                        <i class="icon-king_bed"></i>
+                        <span>3 Br</span>
+                      </li>
+                      <li>
+                        <i class="icon-shower"></i>
+                        <span>2 Ba</span>
+                      </li>
+                      <li>
+                        <img
+                          src="./assets/images/icon_home_project.svg"
+                          alt="icon home project"
+                        />
+                        <span>900 SqFt</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="content_bottom">
+                    <div class="price-info">
+                      <span class="price">$1,250,000</span>
+                    </div>
+                    <div class="actions">
+                      <a href="#">
+                        <i class="icon-star1"></i>
+                      </a>
+                      <a href="#">
+                        <i class="icon-plus"></i>
+                      </a>
                     </div>
                   </div>
                 </div>
-                <div>
-                  <div class="featured_card">
-                    <div class="card_img">
-                      <a href="#">
-                        <img src="./assets/images/home-03.jpeg" alt="home-03" />
-                      </a>
-                      <div class="badges-info">
-                        <span class="badge_info featured_bg">featured</span>
-                        <span class="badge_info sale_bg">for sale</span>
-                      </div>
-                      <div class="img_hover_icon">
-                        <i class="icon-pictures"></i>
-                      </div>
+              </div>
+            </div>
+            <div>
+              <div class="slide_card">
+                <div class="card_img">
+                  <a href="#" data-bg-img="url(./assets/images/home-05.jpeg)">
+                  </a>
+                  <div class="badges-info">
+                    <span class="badge_info featured_bg">featured</span>
+                    <span class="badge_info sale_bg">for sale</span>
+                  </div>
+                  <div class="img_hover_icon">
+                    <i class="icon-pictures"></i>
+                  </div>
+                </div>
+                <div class="card_body">
+                  <div class="content_top">
+                    <h3>
+                      <a href="#"> Casa Lomas de Machalí </a>
+                    </h3>
+                    <div class="address-info">
+                      <a href="#">145 Brooklyn Ave, Brooklyn, New York</a>
                     </div>
-                    <div class="card_body">
-                      <div class="content_top">
-                        <h3>
-                          <a href="#"> Store in Woodside, New York </a>
-                        </h3>
-                        <div class="address-info">
-                          <a href="#">39-11 61st St, Woodside, New York</a>
-                        </div>
-                        <ul class="meta-info">
-                          <li>
-                            <i class="icon-king_bed"></i>
-                            <span>3 Br</span>
-                          </li>
-                          <li>
-                            <i class="icon-shower"></i>
-                            <span>2 Ba</span>
-                          </li>
-                          <li>
-                            <img
-                              src="./assets/images/icon_home_project.svg"
-                              alt="icon home project"
-                            />
-                            <span>900 SqFt</span>
-                          </li>
-                        </ul>
-                      </div>
-                      <div class="content_bottom">
-                        <div class="price-info">
-                          <span class="price">$1,250,000</span>
-                        </div>
-                        <div class="actions">
-                          <a href="#">
-                            <i class="icon-star1"></i>
-                          </a>
-                          <a href="#">
-                            <i class="icon-plus"></i>
-                          </a>
-                        </div>
-                      </div>
+                    <ul class="meta-info">
+                      <li>
+                        <i class="icon-king_bed"></i>
+                        <span>3 Br</span>
+                      </li>
+                      <li>
+                        <i class="icon-shower"></i>
+                        <span>2 Ba</span>
+                      </li>
+                      <li>
+                        <img
+                          src="./assets/images/icon_home_project.svg"
+                          alt="icon home project"
+                        />
+                        <span>900 SqFt</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="content_bottom">
+                    <div class="price-info">
+                      <span class="price">$1,250,000</span>
+                    </div>
+                    <div class="actions">
+                      <a href="#">
+                        <i class="icon-star1"></i>
+                      </a>
+                      <a href="#">
+                        <i class="icon-plus"></i>
+                      </a>
                     </div>
                   </div>
                 </div>
-                <div>
-                  <div class="featured_card">
-                    <div class="card_img">
-                      <a href="#">
-                        <img src="./assets/images/home-04.jpeg" alt="home-04" />
-                      </a>
-                      <div class="badges-info">
-                        <span class="badge_info featured_bg">featured</span>
-                        <span class="badge_info sale_bg">for sale</span>
-                      </div>
-                      <div class="img_hover_icon">
-                        <i class="icon-pictures"></i>
-                      </div>
+              </div>
+            </div>
+            <div>
+              <div class="slide_card">
+                <div class="card_img">
+                  <a href="#" data-bg-img="url(./assets/images/home-06.jpeg)">
+                  </a>
+                  <div class="badges-info">
+                    <span class="badge_info featured_bg">featured</span>
+                    <span class="badge_info sale_bg">for sale</span>
+                    <span class="badge_info offer_bg">hot offer</span>
+                  </div>
+                  <div class="img_hover_icon">
+                    <i class="icon-pictures"></i>
+                  </div>
+                </div>
+                <div class="card_body">
+                  <div class="content_top">
+                    <h3>
+                      <a href="#">Luxury Villa In Los Angeles </a>
+                    </h3>
+                    <div class="address-info">
+                      <a href="#">8433 Sunset Blvd, Los Angeles</a>
                     </div>
-                    <div class="card_body">
-                      <div class="content_top">
-                        <h3>
-                          <a href="#"> Hermosa casa al norte </a>
-                        </h3>
-                        <div class="address-info">
-                          <a href="#">393 Lewis Ave, Brooklyn, New York</a>
-                        </div>
-                        <ul class="meta-info">
-                          <li>
-                            <i class="icon-king_bed"></i>
-                            <span>3 Br</span>
-                          </li>
-                          <li>
-                            <i class="icon-shower"></i>
-                            <span>2 Ba</span>
-                          </li>
-                          <li>
-                            <img
-                              src="./assets/images/icon_home_project.svg"
-                              alt="icon home project"
-                            />
-                            <span>900 SqFt</span>
-                          </li>
-                        </ul>
-                      </div>
-                      <div class="content_bottom">
-                        <div class="price-info">
-                          <span class="price">$1,250,000</span>
-                        </div>
-                        <div class="actions">
-                          <a href="#">
-                            <i class="icon-star1"></i>
-                          </a>
-                          <a href="#">
-                            <i class="icon-plus"></i>
-                          </a>
-                        </div>
-                      </div>
+                    <ul class="meta-info">
+                      <li>
+                        <i class="icon-king_bed"></i>
+                        <span>3 Br</span>
+                      </li>
+                      <li>
+                        <i class="icon-shower"></i>
+                        <span>2 Ba</span>
+                      </li>
+                      <li>
+                        <img
+                          src="./assets/images/icon_home_project.svg"
+                          alt="icon home project"
+                        />
+                        <span>900 SqFt</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="content_bottom">
+                    <div class="price-info">
+                      <span class="price">$1,250,000</span>
+                    </div>
+                    <div class="actions">
+                      <a href="#">
+                        <i class="icon-star1"></i>
+                      </a>
+                      <a href="#">
+                        <i class="icon-plus"></i>
+                      </a>
                     </div>
                   </div>
                 </div>
-                <div>
-                  <div class="featured_card">
-                    <div class="card_img">
-                      <a href="#">
-                        <img src="./assets/images/home-05.jpeg" alt="home-05" />
-                      </a>
-                      <div class="badges-info">
-                        <span class="badge_info featured_bg">featured</span>
-                        <span class="badge_info sale_bg">for sale</span>
-                      </div>
-                      <div class="img_hover_icon">
-                        <i class="icon-pictures"></i>
-                      </div>
+              </div>
+            </div>
+            <div>
+              <div class="slide_card">
+                <div class="card_img">
+                  <a href="#" data-bg-img="url(./assets/images/home-07.jpeg)">
+                  </a>
+                  <div class="badges-info">
+                    <span class="badge_info featured_bg">featured</span>
+                    <span class="badge_info sale_bg">for sale</span>
+                    <span class="badge_info offer_bg">hot offer</span>
+                  </div>
+                  <div class="img_hover_icon">
+                    <i class="icon-pictures"></i>
+                  </div>
+                </div>
+                <div class="card_body">
+                  <div class="content_top">
+                    <h3>
+                      <a href="#"> Farm in 5137 Compton Ave, Los Angeles </a>
+                    </h3>
+                    <div class="address-info">
+                      <a href="#">5137 Compton Ave, Los Angeles</a>
                     </div>
-                    <div class="card_body">
-                      <div class="content_top">
-                        <h3>
-                          <a href="#"> Casa Lomas de Machalí </a>
-                        </h3>
-                        <div class="address-info">
-                          <a href="#">145 Brooklyn Ave, Brooklyn, New York</a>
-                        </div>
-                        <ul class="meta-info">
-                          <li>
-                            <i class="icon-king_bed"></i>
-                            <span>3 Br</span>
-                          </li>
-                          <li>
-                            <i class="icon-shower"></i>
-                            <span>2 Ba</span>
-                          </li>
-                          <li>
-                            <img
-                              src="./assets/images/icon_home_project.svg"
-                              alt="icon home project"
-                            />
-                            <span>900 SqFt</span>
-                          </li>
-                        </ul>
-                      </div>
-                      <div class="content_bottom">
-                        <div class="price-info">
-                          <span class="price">$1,250,000</span>
-                        </div>
-                        <div class="actions">
-                          <a href="#">
-                            <i class="icon-star1"></i>
-                          </a>
-                          <a href="#">
-                            <i class="icon-plus"></i>
-                          </a>
-                        </div>
-                      </div>
+                    <ul class="meta-info">
+                      <li>
+                        <i class="icon-king_bed"></i>
+                        <span>3 Br</span>
+                      </li>
+                      <li>
+                        <i class="icon-shower"></i>
+                        <span>2 Ba</span>
+                      </li>
+                      <li>
+                        <img
+                          src="./assets/images/icon_home_project.svg"
+                          alt="icon home project"
+                        />
+                        <span>900 SqFt</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="content_bottom">
+                    <div class="price-info">
+                      <span class="price">$1,250,000</span>
+                    </div>
+                    <div class="actions">
+                      <a href="#">
+                        <i class="icon-star1"></i>
+                      </a>
+                      <a href="#">
+                        <i class="icon-plus"></i>
+                      </a>
                     </div>
                   </div>
                 </div>
-                <div>
-                  <div class="featured_card">
-                    <div class="card_img">
-                      <a href="#">
-                        <img src="./assets/images/home-06.jpeg" alt="home-06" />
-                      </a>
-                      <div class="badges-info">
-                        <span class="badge_info featured_bg">featured</span>
-                        <span class="badge_info sale_bg">for sale</span>
-                        <span class="badge_info offer_bg">hot offer</span>
-                      </div>
-                      <div class="img_hover_icon">
-                        <i class="icon-pictures"></i>
-                      </div>
+              </div>
+            </div>
+            <div>
+              <div class="slide_card">
+                <div class="card_img">
+                  <a href="#" data-bg-img="url(./assets/images/home-10.jpeg)">
+                  </a>
+                  <div class="badges-info">
+                    <span class="badge_info featured_bg">featured</span>
+                    <span class="badge_info sale_bg">for sale</span>
+                    <span class="badge_info offer_bg">hot offer</span>
+                  </div>
+                  <div class="img_hover_icon">
+                    <i class="icon-pictures"></i>
+                  </div>
+                </div>
+                <div class="card_body">
+                  <div class="content_top">
+                    <h3>
+                      <a href="#"> Farm in Castro St Los Angeles </a>
+                    </h3>
+                    <div class="address-info">
+                      <a href="#">5905 Wilshire Blvd, Los Angeles</a>
                     </div>
-                    <div class="card_body">
-                      <div class="content_top">
-                        <h3>
-                          <a href="#">Luxury Villa In Los Angeles </a>
-                        </h3>
-                        <div class="address-info">
-                          <a href="#">8433 Sunset Blvd, Los Angeles</a>
-                        </div>
-                        <ul class="meta-info">
-                          <li>
-                            <i class="icon-king_bed"></i>
-                            <span>3 Br</span>
-                          </li>
-                          <li>
-                            <i class="icon-shower"></i>
-                            <span>2 Ba</span>
-                          </li>
-                          <li>
-                            <img
-                              src="./assets/images/icon_home_project.svg"
-                              alt="icon home project"
-                            />
-                            <span>900 SqFt</span>
-                          </li>
-                        </ul>
-                      </div>
-                      <div class="content_bottom">
-                        <div class="price-info">
-                          <span class="price">$1,250,000</span>
-                        </div>
-                        <div class="actions">
-                          <a href="#">
-                            <i class="icon-star1"></i>
-                          </a>
-                          <a href="#">
-                            <i class="icon-plus"></i>
-                          </a>
-                        </div>
-                      </div>
+                    <ul class="meta-info">
+                      <li>
+                        <i class="icon-king_bed"></i>
+                        <span>3 Br</span>
+                      </li>
+                      <li>
+                        <i class="icon-shower"></i>
+                        <span>2 Ba</span>
+                      </li>
+                      <li>
+                        <img
+                          src="./assets/images/icon_home_project.svg"
+                          alt="icon home project"
+                        />
+                        <span>900 SqFt</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="content_bottom">
+                    <div class="price-info">
+                      <span class="price">$1,250,000</span>
+                    </div>
+                    <div class="actions">
+                      <a href="#">
+                        <i class="icon-star1"></i>
+                      </a>
+                      <a href="#">
+                        <i class="icon-plus"></i>
+                      </a>
                     </div>
                   </div>
                 </div>
-                <div>
-                  <div class="featured_card">
-                    <div class="card_img">
-                      <a href="#">
-                        <img src="./assets/images/home-07.jpeg" alt="home-07" />
-                      </a>
-                      <div class="badges-info">
-                        <span class="badge_info featured_bg">featured</span>
-                        <span class="badge_info sale_bg">for sale</span>
-                        <span class="badge_info offer_bg">hot offer</span>
-                      </div>
-                      <div class="img_hover_icon">
-                        <i class="icon-pictures"></i>
-                      </div>
+              </div>
+            </div>
+            <div>
+              <div class="slide_card">
+                <div class="card_img">
+                  <a href="#" data-bg-img="url(./assets/images/home-11.jpeg)">
+                  </a>
+                  <div class="badges-info">
+                    <span class="badge_info featured_bg">featured</span>
+                    <span class="badge_info sale_bg">for sale</span>
+                  </div>
+                  <div class="img_hover_icon">
+                    <i class="icon-pictures"></i>
+                  </div>
+                </div>
+                <div class="card_body">
+                  <div class="content_top">
+                    <h3>
+                      <a href="#"> Park Avenue Apartment </a>
+                    </h3>
+                    <div class="address-info">
+                      <a href="#">307 Mohawk St, Utica</a>
                     </div>
-                    <div class="card_body">
-                      <div class="content_top">
-                        <h3>
-                          <a href="#">
-                            Farm in 5137 Compton Ave, Los Angeles
-                          </a>
-                        </h3>
-                        <div class="address-info">
-                          <a href="#">5137 Compton Ave, Los Angeles</a>
-                        </div>
-                        <ul class="meta-info">
-                          <li>
-                            <i class="icon-king_bed"></i>
-                            <span>3 Br</span>
-                          </li>
-                          <li>
-                            <i class="icon-shower"></i>
-                            <span>2 Ba</span>
-                          </li>
-                          <li>
-                            <img
-                              src="./assets/images/icon_home_project.svg"
-                              alt="icon home project"
-                            />
-                            <span>900 SqFt</span>
-                          </li>
-                        </ul>
-                      </div>
-                      <div class="content_bottom">
-                        <div class="price-info">
-                          <span class="price">$1,250,000</span>
-                        </div>
-                        <div class="actions">
-                          <a href="#">
-                            <i class="icon-star1"></i>
-                          </a>
-                          <a href="#">
-                            <i class="icon-plus"></i>
-                          </a>
-                        </div>
-                      </div>
+                    <ul class="meta-info">
+                      <li>
+                        <i class="icon-king_bed"></i>
+                        <span>3 Br</span>
+                      </li>
+                      <li>
+                        <i class="icon-shower"></i>
+                        <span>2 Ba</span>
+                      </li>
+                      <li>
+                        <img
+                          src="./assets/images/icon_home_project.svg"
+                          alt="icon home project"
+                        />
+                        <span>900 SqFt</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="content_bottom">
+                    <div class="price-info">
+                      <span class="price">$1,250,000</span>
+                    </div>
+                    <div class="actions">
+                      <a href="#">
+                        <i class="icon-star1"></i>
+                      </a>
+                      <a href="#">
+                        <i class="icon-plus"></i>
+                      </a>
                     </div>
                   </div>
                 </div>
-                <div>
-                  <div class="featured_card">
-                    <div class="card_img">
-                      <a href="#">
-                        <img src="./assets/images/home-08.jpeg" alt="home-01" />
-                      </a>
-                      <div class="badges-info">
-                        <span class="badge_info featured_bg">featured</span>
-                        <span class="badge_info rent_bg">for rent</span>
-                      </div>
-                      <div class="img_hover_icon">
-                        <i class="icon-pictures"></i>
-                      </div>
+              </div>
+            </div>
+            <div>
+              <div class="slide_card">
+                <div class="card_img">
+                  <a href="#" data-bg-img="url(./assets/images/home-12.jpeg)">
+                  </a>
+                  <div class="badges-info">
+                    <span class="badge_info featured_bg">featured</span>
+                    <span class="badge_info sale_bg">for sale</span>
+                  </div>
+                  <div class="img_hover_icon">
+                    <i class="icon-pictures"></i>
+                  </div>
+                </div>
+                <div class="card_body">
+                  <div class="content_top">
+                    <h3>
+                      <a href="#"> Friendly Family Houses </a>
+                    </h3>
+                    <div class="address-info">
+                      <a href="#">475 Washington Ave, Kingston</a>
                     </div>
-                    <div class="card_body">
-                      <div class="content_top">
-                        <h3>
-                          <a href="#"> Single House Near Los Angeles </a>
-                        </h3>
-                        <div class="address-info">
-                          <a href="#">10768 Bellagio Rd, Los Angeles</a>
-                        </div>
-                        <ul class="meta-info">
-                          <li>
-                            <i class="icon-king_bed"></i>
-                            <span>3 Br</span>
-                          </li>
-                          <li>
-                            <i class="icon-shower"></i>
-                            <span>2 Ba</span>
-                          </li>
-                          <li>
-                            <img
-                              src="./assets/images/icon_home_project.svg"
-                              alt="icon home project"
-                            />
-                            <span>900 SqFt</span>
-                          </li>
-                        </ul>
-                      </div>
-                      <div class="content_bottom">
-                        <div class="price-info">
-                          <span class="price">$550</span>
-                          <span class="postfix">/ month</span>
-                        </div>
-                        <div class="actions">
-                          <a href="#">
-                            <i class="icon-star1"></i>
-                          </a>
-                          <a href="#">
-                            <i class="icon-plus"></i>
-                          </a>
-                        </div>
-                      </div>
+                    <ul class="meta-info">
+                      <li>
+                        <i class="icon-king_bed"></i>
+                        <span>3 Br</span>
+                      </li>
+                      <li>
+                        <i class="icon-shower"></i>
+                        <span>2 Ba</span>
+                      </li>
+                      <li>
+                        <img
+                          src="./assets/images/icon_home_project.svg"
+                          alt="icon home project"
+                        />
+                        <span>900 SqFt</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="content_bottom">
+                    <div class="price-info">
+                      <span class="price">$1,250,000</span>
+                    </div>
+                    <div class="actions">
+                      <a href="#">
+                        <i class="icon-star1"></i>
+                      </a>
+                      <a href="#">
+                        <i class="icon-plus"></i>
+                      </a>
                     </div>
                   </div>
                 </div>
-                <div>
-                  <div class="featured_card">
-                    <div class="card_img">
-                      <a href="#">
-                        <img src="./assets/images/home-09.jpeg" alt="home-09" />
-                      </a>
-                      <div class="badges-info">
-                        <span class="badge_info featured_bg">featured</span>
-                        <span class="badge_info rent_bg">for rent</span>
-                      </div>
-                      <div class="img_hover_icon">
-                        <i class="icon-pictures"></i>
-                      </div>
+              </div>
+            </div>
+            <div>
+              <div class="slide_card">
+                <div class="card_img">
+                  <a href="#" data-bg-img="url(./assets/images/home-13.jpeg)">
+                  </a>
+                  <div class="badges-info">
+                    <span class="badge_info featured_bg">featured</span>
+                    <span class="badge_info sale_bg">for sale</span>
+                  </div>
+                  <div class="img_hover_icon">
+                    <i class="icon-pictures"></i>
+                  </div>
+                </div>
+                <div class="card_body">
+                  <div class="content_top">
+                    <h3>
+                      <a href="#"> Affordable Urban House </a>
+                    </h3>
+                    <div class="address-info">
+                      <a href="#">500 25th St, Brooklyn, New York</a>
                     </div>
-                    <div class="card_body">
-                      <div class="content_top">
-                        <h3>
-                          <a href="#"> House Highland Ave Los Angeles </a>
-                        </h3>
-                        <div class="address-info">
-                          <a href="#">3854 Cazador St, Los Angeles</a>
-                        </div>
-                        <ul class="meta-info">
-                          <li>
-                            <i class="icon-king_bed"></i>
-                            <span>3 Br</span>
-                          </li>
-                          <li>
-                            <i class="icon-shower"></i>
-                            <span>2 Ba</span>
-                          </li>
-                          <li>
-                            <img
-                              src="./assets/images/icon_home_project.svg"
-                              alt="icon home project"
-                            />
-                            <span>900 SqFt</span>
-                          </li>
-                        </ul>
-                      </div>
-                      <div class="content_bottom">
-                        <div class="price-info">
-                          <span class="price">$550</span>
-                          <span class="postfix">/ month</span>
-                        </div>
-                        <div class="actions">
-                          <a href="#">
-                            <i class="icon-star1"></i>
-                          </a>
-                          <a href="#">
-                            <i class="icon-plus"></i>
-                          </a>
-                        </div>
-                      </div>
+                    <ul class="meta-info">
+                      <li>
+                        <i class="icon-king_bed"></i>
+                        <span>3 Br</span>
+                      </li>
+                      <li>
+                        <i class="icon-shower"></i>
+                        <span>2 Ba</span>
+                      </li>
+                      <li>
+                        <img
+                          src="./assets/images/icon_home_project.svg"
+                          alt="icon home project"
+                        />
+                        <span>900 SqFt</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="content_bottom">
+                    <div class="price-info">
+                      <span class="price">$1,250,000</span>
+                    </div>
+                    <div class="actions">
+                      <a href="#">
+                        <i class="icon-star1"></i>
+                      </a>
+                      <a href="#">
+                        <i class="icon-plus"></i>
+                      </a>
                     </div>
                   </div>
                 </div>
-                <div>
-                  <div class="featured_card">
-                    <div class="card_img">
-                      <a href="#">
-                        <img src="./assets/images/home-10.jpeg" alt="home-10" />
-                      </a>
-                      <div class="badges-info">
-                        <span class="badge_info featured_bg">featured</span>
-                        <span class="badge_info sale_bg">for sale</span>
-                        <span class="badge_info offer_bg">hot offer</span>
-                      </div>
-                      <div class="img_hover_icon">
-                        <i class="icon-pictures"></i>
-                      </div>
+              </div>
+            </div>
+            <div>
+              <div class="slide_card">
+                <div class="card_img">
+                  <a href="#" data-bg-img="url(./assets/images/home-14.jpeg)">
+                  </a>
+                  <div class="badges-info">
+                    <span class="badge_info featured_bg">featured</span>
+                    <span class="badge_info sale_bg">for sale</span>
+                  </div>
+                  <div class="img_hover_icon">
+                    <i class="icon-pictures"></i>
+                  </div>
+                </div>
+                <div class="card_body">
+                  <div class="content_top">
+                    <h3>
+                      <a href="#"> Home in Metric Way </a>
+                    </h3>
+                    <div class="address-info">
+                      <a href="#">99 Schermerhorn St, Brooklyn, New York</a>
                     </div>
-                    <div class="card_body">
-                      <div class="content_top">
-                        <h3>
-                          <a href="#"> Farm in Castro St Los Angeles </a>
-                        </h3>
-                        <div class="address-info">
-                          <a href="#">5905 Wilshire Blvd, Los Angeles</a>
-                        </div>
-                        <ul class="meta-info">
-                          <li>
-                            <i class="icon-king_bed"></i>
-                            <span>3 Br</span>
-                          </li>
-                          <li>
-                            <i class="icon-shower"></i>
-                            <span>2 Ba</span>
-                          </li>
-                          <li>
-                            <img
-                              src="./assets/images/icon_home_project.svg"
-                              alt="icon home project"
-                            />
-                            <span>900 SqFt</span>
-                          </li>
-                        </ul>
-                      </div>
-                      <div class="content_bottom">
-                        <div class="price-info">
-                          <span class="price">$1,250,000</span>
-                        </div>
-                        <div class="actions">
-                          <a href="#">
-                            <i class="icon-star1"></i>
-                          </a>
-                          <a href="#">
-                            <i class="icon-plus"></i>
-                          </a>
-                        </div>
-                      </div>
+                    <ul class="meta-info">
+                      <li>
+                        <i class="icon-king_bed"></i>
+                        <span>3 Br</span>
+                      </li>
+                      <li>
+                        <i class="icon-shower"></i>
+                        <span>2 Ba</span>
+                      </li>
+                      <li>
+                        <img
+                          src="./assets/images/icon_home_project.svg"
+                          alt="icon home project"
+                        />
+                        <span>900 SqFt</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="content_bottom">
+                    <div class="price-info">
+                      <span class="price">$1,250,000</span>
+                    </div>
+                    <div class="actions">
+                      <a href="#">
+                        <i class="icon-star1"></i>
+                      </a>
+                      <a href="#">
+                        <i class="icon-plus"></i>
+                      </a>
                     </div>
                   </div>
                 </div>

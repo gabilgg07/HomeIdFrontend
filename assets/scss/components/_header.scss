@@ -1,11 +1,8 @@
 header {
-  .header_desktop_wrapper {
+  .header_wrapper {
     background-color: $clr-bg-black-1;
     height: 80px;
     display: flex;
-    @include mq-xl() {
-      display: none;
-    }
     align-items: center;
     transition: all 0.5s;
     position: absolute;
@@ -22,15 +19,12 @@ header {
       transform: translateY(-100%);
     }
   }
+  .header_desktop_wrapper {
+    @include mq-xl() {
+      display: none;
+    }
+  }
   .header_mobile_wrapper {
-    background-color: $clr-bg-black-1;
-    height: 80px;
-    display: flex;
-    align-items: center;
-    transition: all 0.5s;
-    position: absolute;
-    width: 100%;
-    z-index: 1;
     display: none;
     @include mq-xl() {
       display: flex;
@@ -105,7 +99,7 @@ header {
       }
     }
     .add-listing {
-      margin-left: 2.25rem;
+      margin-left: 1.25rem;
       a {
         padding: 0 1.875rem;
         border: 1px solid transparent;

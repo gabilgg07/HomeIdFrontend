@@ -1,22 +1,30 @@
 $(document).ready(function () {
+  // bg-imgs
+
+  if ($("[data-bg-img]")) {
+    $.map($("[data-bg-img]"), function (el) {
+      $(el).css("background-image", $(el).data("bg-img"));
+    });
+  }
+
   // scroling and header top
   let scrolTop = $(window).scrollTop();
 
   $(window).scroll(function (e) {
     let scroll = $(window).scrollTop();
     if (scroll > 0) {
-      $(".header_desktop_wrapper").addClass("scrolling");
+      $(".header_wrapper").addClass("scrolling");
     } else {
-      $(".header_desktop_wrapper").removeClass("scrolling");
+      $(".header_wrapper").removeClass("scrolling");
     }
     if (scrolTop < scroll) {
       if (scroll < 100) {
-        $(".header_desktop_wrapper").removeClass("hide");
+        $(".header_wrapper").removeClass("hide");
       } else {
-        $(".header_desktop_wrapper").addClass("hide");
+        $(".header_wrapper").addClass("hide");
       }
     } else {
-      $(".header_desktop_wrapper").removeClass("hide");
+      $(".header_wrapper").removeClass("hide");
     }
 
     scrolTop = $(window).scrollTop();
@@ -51,10 +59,6 @@ $(document).ready(function () {
 
   // slider
   if ($(".homeId_slider")) {
-    $.map($(".slider-wrapper"), function (el) {
-      $(el).css("background-image", $(el).data("bg-img"));
-    });
-
     $(".homeId_slider").slick();
 
     $(".homeId_slider .slick-arrow.slick-prev").html(
@@ -72,10 +76,6 @@ $(document).ready(function () {
     let yCenter = parseFloat($(".search-form").css("height")) / 2;
     $(".search-form").css("left", xCenter);
     $(".search-form").css("bottom", -yCenter);
-
-    $.map($(".finded-homes .item-img a"), function (el) {
-      $(el).css("background-image", $(el).data("bg-img"));
-    });
 
     $(".search_form").submit(function (e) {
       e.preventDefault();
@@ -265,14 +265,8 @@ $(document).ready(function () {
     });
   }
 
-  // wellcome section
-  if ($("#wellcome_featured")) {
-    $("#wellcome_featured").css(
-      "background-image",
-      $("#wellcome_featured").data("bg-img")
-    );
-
-    $(".featured_items").slick({
+  if ($(".slide_items")) {
+    $(".slide_items").slick({
       dots: true,
       infinite: true,
       slidesToShow: 4,
