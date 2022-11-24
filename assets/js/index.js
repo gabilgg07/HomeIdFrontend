@@ -28,6 +28,12 @@ $(document).ready(function () {
     }
 
     scrolTop = $(window).scrollTop();
+
+    if (scroll > $(window).height() / 2) {
+      $(".back-to-top").addClass("in");
+    } else {
+      $(".back-to-top").removeClass("in");
+    }
   });
 
   // burger-menu
@@ -390,6 +396,12 @@ $(document).ready(function () {
           },
         },
       ],
+    });
+  }
+  if ($(".back-to-top")) {
+    $(".back-to-top").click(function (e) {
+      e.preventDefault();
+      $(window).scrollTop(0);
     });
   }
 });

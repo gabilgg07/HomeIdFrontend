@@ -24,20 +24,47 @@ h6 {
 
 .homeId_container {
   max-width: 1550px;
+  width: 100%;
+  padding: 0 30px;
   @include mq-xl() {
-    max-width: 960px;
+    max-width: 1200px;
+    padding: 0 120px;
   }
   @include mq-lg() {
     max-width: 720px;
+    padding: 0 15px;
   }
   @include mq-md() {
     max-width: 540px;
   }
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+}
+
+.back-to-top {
+  width: 44px;
+  height: 44px;
+  color: #fff;
+  background-color: #666;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 2;
+  transition: all 0.5s;
+  transform: translateX(100px);
+  &:hover {
+    background-color: $clr-primary;
+    color: #fff;
+  }
+  i {
+    font-size: 22px;
+  }
+  &.in {
+    transform: translateX(0);
+  }
 }
 
 [data-bg-img] {
@@ -50,6 +77,11 @@ h6 {
   margin-bottom: 30px;
 }
 
+.mb-xl_30 {
+  @include mq-xl() {
+    margin-bottom: 30px;
+  }
+}
 .mb-lg_30 {
   @include mq-lg() {
     margin-bottom: 30px;
