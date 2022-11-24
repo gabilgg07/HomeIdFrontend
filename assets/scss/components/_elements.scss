@@ -11,16 +11,22 @@
     text-align: center;
     font-weight: 300;
     &.rent_bg {
-      background-color: $clr-tag-1;
+      background-color: $clr-tag-rent;
     }
     &.featured_bg {
-      background-color: $clr-tag-2;
+      background-color: $clr-tag-featured;
     }
     &.sale_bg {
-      background-color: $clr-tag-3;
+      background-color: $clr-tag-sale;
     }
     &.offer_bg {
-      background-color: $clr-tag-4;
+      background-color: $clr-tag-offer;
+    }
+    &.articles_bg {
+      background-color: $clr-tag-articles;
+      &:hover {
+        background-color: $clr-primary;
+      }
     }
   }
 }

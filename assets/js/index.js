@@ -59,7 +59,9 @@ $(document).ready(function () {
 
   // slider
   if ($(".homeId_slider")) {
-    $(".homeId_slider").slick();
+    $(".homeId_slider").slick({
+      infinite: false,
+    });
 
     $(".homeId_slider .slick-arrow.slick-prev").html(
       `<i class="icon-chevron-thin-left"></i>`
@@ -268,7 +270,7 @@ $(document).ready(function () {
   if ($(".slide_items")) {
     $(".slide_items").slick({
       dots: true,
-      infinite: true,
+      infinite: false,
       slidesToShow: 4,
       slidesToScroll: 4,
       arrows: false,
@@ -287,6 +289,104 @@ $(document).ready(function () {
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1,
+          },
+        },
+      ],
+    });
+  }
+  if ($(".team_wrapper")) {
+    $(".team_wrapper").slick({
+      dots: true,
+      infinite: false,
+      slidesToShow: 3,
+      slidesToScroll: 3,
+      arrows: false,
+      responsive: [
+        {
+          breakpoint: 992,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            infinite: true,
+            dots: true,
+          },
+        },
+        {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          },
+        },
+      ],
+    });
+  }
+  if ($(".news_wrapper")) {
+    $(".news_wrapper").slick({
+      dots: false,
+      infinite: false,
+      slidesToShow: 4,
+      slidesToScroll: 4,
+      arrows: false,
+      responsive: [
+        {
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+          },
+        },
+        {
+          breakpoint: 992,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+          },
+        },
+        {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          },
+        },
+      ],
+    });
+  }
+  if ($(".clients_wrapper")) {
+    $(".clients_wrapper").slick({
+      dots: false,
+      infinite: false,
+      slidesToShow: 6,
+      slidesToScroll: 6,
+      arrows: false,
+      responsive: [
+        {
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 5,
+            slidesToScroll: 5,
+          },
+        },
+        {
+          breakpoint: 992,
+          settings: {
+            slidesToShow: 4,
+            slidesToScroll: 4,
+          },
+        },
+        {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+          },
+        },
+        {
+          breakpoint: 575,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
           },
         },
       ],
